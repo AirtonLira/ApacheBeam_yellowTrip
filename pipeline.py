@@ -60,30 +60,30 @@ def run():
     pipeline_options = PipelineOptions.from_dictionary(options_config)
 
 
-    p1 = beam.Pipeline(options=pipeline_options)
+    p1 = beam.Pipeline(options=pipeline_options) 
 
-    # descobreExtraiArquivos = (
-    #     p1
-    #     | "Lista arquivos no diretorio" >> fileio.MatchFiles("{}{}".format(STORAGE_BRONZE_PATH,"*.zip"))
-    #     | "Obtem apenas arquivos zipados" >> beam.Map(lambda x: x.path)
-    #     | "Descompacta arquivos zipados" >> beam.ParDo(extrair()) 
-    # )
+    descobreExtraiArquivos = (
+        p1
+        | "Lista arquivos no diretorio" >> fileio.MatchFiles("{}{}".format(STORAGE_BRONZE_PATH,"*.zip"))
+        | "Obtem apenas arquivos zipados" >> beam.Map(lambda x: x.path)
+        | "Descompacta arquivos zipados" >> beam.ParDo(extrair()) 
+    )
 
-    # carregaArquivos = (
-    #     descobreExtraiArquivos
-    #     | "Encontrando arquivos csv no diretorio Bronze" >> fileio.MatchFiles("{}{}".format(STORAGE_BRONZE_PATH,"*.csv"))
-    #     | "Mapeando arquivos CSV encontrados" >> beam.Map(lambda x: x.path)
-    #     | "Leitura dos arquivos CSV" >> beam.io.ReadAllFromText()
-    # )
+    carregaArquivos = (
+        descobreExtraiArquivos
+        | "Encontrando arquivos csv no diretorio Bronze" >> fileio.MatchFiles("{}{}".format(STORAGE_BRONZE_PATH,"*.csv"))
+        | "Mapeando arquivos CSV encontrados" >> beam.Map(lambda x: x.path)
+        | "Leitura dos arquivos CSV" >> beam.io.ReadAllFromText()
+    )
 
-    # escritaParquet = (
-    #     carregaArquivos
-    #     | "Realiza decode adequado para parquet" >> beam.Map(lambda x: x.encode().decode('utf8'))
-    #     | "Divide os dados em listas separadas por virgula" >> beam.Map(lambda x: x.split(",")) 
-    #     | "Retirada do cabeçalho" >> beam.Filter(lambda x: x[3] != 'passenger_count')
-    #     | "Seleção das colunas" >> beam.Map(lambda x: {"VendorID":x[0] , "pickup_datetime": x[1] , "dropoff_datetime": x[2], "passenger_count":int(x[3]), "trip_distance":x[4]} ) 
-    #     | "Escrita do arquivo parquet" >> beam.io.WriteToParquet(STORAGE_SILVER_PATH, parquetFinalSchema)
-    # )
+    escritaParquet = (
+        carregaArquivos
+        | "Realiza decode adequado para parquet" >> beam.Map(lambda x: x.encode().decode('utf8'))
+        | "Divide os dados em listas separadas por virgula" >> beam.Map(lambda x: x.split(",")) 
+        | "Retirada do cabeçalho" >> beam.Filter(lambda x: x[3] != 'passenger_count')
+        | "Seleção das colunas" >> beam.Map(lambda x: {"VendorID":x[0] , "pickup_datetime": x[1] , "dropoff_datetime": x[2], "passenger_count":int(x[3]), "trip_distance":x[4]} ) 
+        | "Escrita do arquivo parquet" >> beam.io.WriteToParquet(STORAGE_SILVER_PATH, parquetFinalSchema)
+    )
 
     escritaBigQuery = (
         p1

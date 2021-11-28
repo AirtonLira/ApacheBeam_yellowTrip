@@ -1,7 +1,15 @@
-##### Requisitos a serem atingidos:
+#### Apache beam em python com execução no Dataflow da GCP e escrita direta no BigQuery
 
-1. Utilizar de recursos windows para quebrar em janela de 5 minutos os seguintes eventos:
-- Basear-se na coluna de tpep_pickup_datetime como ponto para a window.
-- calcular a média da distancia dentre a janela por tipo de pagamento.
+## 📜 Features:
+- Desenvolvimento pipeline em python com as PCollection de forma sequenciais,
+- Leitura de arquivos zipados no Google Storage extraindo os CSV.
+- Leitura e transformação do CSV para escrita em formato Parquet.
+- Escrita no Google BigQuery dos arquivos parquet criados.
 
-2. Media de passageiros por Hora
+
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=500px height=300px src="https://i.postimg.cc/W1zFXh3Y/arquitetura.png" alt="arquitetura"></a>
+</p>
+
+
