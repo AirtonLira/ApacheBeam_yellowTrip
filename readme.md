@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="" rel="noopener">
- <img width=500px height=300px src="https://i.postimg.cc/W1zFXh3Y/arquitetura.png" alt="arquitetura"></a>
+ <img width=800px height=300px src="https://i.postimg.cc/W1zFXh3Y/arquitetura.png" alt="arquitetura"></a>
 </p>
 
 
