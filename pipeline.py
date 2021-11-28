@@ -59,7 +59,6 @@ def run():
 
     pipeline_options = PipelineOptions.from_dictionary(options_config)
 
-
     p1 = beam.Pipeline(options=pipeline_options) 
 
     descobreExtraiArquivos = (
