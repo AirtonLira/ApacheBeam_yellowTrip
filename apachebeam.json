@@ -1,12 +1,3 @@
 {
   "type": "service_account",
-  "project_id": "apachebeam-328222",
-  "private_key_id": "e92aaaf69215f6018eaef7e69b17d37448f44570",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDPCJiTYV9GTTzq\nKo0m0Ex+I1Qjvnn0oGXeUMQklm2rXBktASSN3VBeJjeC0y+wOm32lcKyqXevBvSu\nGTQFDcyiUu4nwxdgjxJoaDiwP4zkcX2q1oJZI4t0Xu/aYSo0KhU1/Bjrx+ni0Q7i\nj0StI7WdlYwGimfZhV2EhQL7/tNPKrtSILpw7aKCNc2p9z/HAYN8OqiQBKFwfYuK\ns5+I0TEA4ZoJW72uXzfB8cryD2tkOWDsu3bG3EhqFRU7d7E5H9gF+TGXiIBojE8b\nn8VRC1x6GrHs/yageRVMBBuOb7UcQer/woBwqZKpbk6kUcDTvzbTZW5s3Ds/rvZ7\n1zOvfkOXAgMBAAECggEANdZ76tOG9Z6vSQuwshe31JN2VWc6iqFNbE8feo49zbKA\n/4GNEnErbZhNljE59P90ygtu2owUSgkqhr2aF/hbLxkWwnNKuHrsJAd6OmcESgGz\nVsI6mliScrwfbnAXDAKnimbYyjOuACQyVTtBdi7Tkzuo8qh6UggK5iO6v3IoXCz9\n6Lk4kP3gsd82A+UyVAlhEd6GeaPooEpxYZ3+EARRkCT/pYIzgRNVs3nw2LCnmgAL\nzl21R9MLxBic/C5rdJaUeZWx7kIAAOf+LIpZTeAB1WHgdruDwjpPpGc5MSgujt60\n7R51MPAPwyf99zO12lXdn1HMq7jWDj4qXH6xiwgjfQKBgQD6f917SzU7YgCPZoaE\nM+n/Pz2sgADguksjUtIZZbcc1grANbWy9h2FtHeZ3yeBR5MhcT6veQg4xx76BdXv\n0wNj+PJJ7LwVi+VDUC50rXpncYxfGVTxNf158qQpdrblhAGT93MzPPovqn29D/2l\n8N85ox2ytApS6NqnUR23lIbibQKBgQDTlGVHz7lxqsAlh4GNnQ4r9kYvg/NYdgo+\nwjijGwHXO+669ydWVxYhMqcfe2LnfvJGBoQ97S8iOSdBMaFPbrAQ/4ceZ8g65oGs\nBMGF/boLcmKZU9d5svHEHwL8MFI2YILMENf13qseHrxl4S6mDr+xpNLrp42Kpnva\n3L+RXVPbkwKBgQDOfmkNIcoX0Ym0rEdm44SZLICimkIe/nLCA5u94+M2mhryp1PI\n2qkrdsDAzvu5zk6y2q9Z5uOoKjyWzgi1UbURzD2uQsAo4tFy07334KlubGPSYQds\nb50r0aERrRLH0DGcz/be3f0/HcPY/j2RdSYOVTA+B7wa7GiSVIOyuXUXYQKBgQCv\ndqufqEc0WtTKytvH422zS6PdF+KhhBLvBQcPTQBzzMIoz3sSAVra4TTzyNG3BfJJ\n3HGjIaYrDZbeXBhY1YSyNBeMQakuH6d+TttnEYpOn+fhHETgKmSRrt484p3rdpJC\nRd2zi5wBeJ/pJZwYHrcezYAV6nhZecPRN6yvEuTOfQKBgF4J2wn/O27fR4Bi7/QB\n5jJytv9SCFvdoaCoYugTVzqfZ9RuGrB0iv+wLEM2+BsIbJvSgfVvPRJG0Ly//d9r\nIPTGAlJNsrKlQ1CYyiDZwylMDC1E4hlSNsrhSXZV/cg4APq7cFvNjifimt/P20oS\nakR9pbWYFQTFk3ISPr75HPJl\n-----END PRIVATE KEY-----\n",
-  "client_email": "apachebeam@apachebeam-328222.iam.gserviceaccount.com",
-  "client_id": "110577021455854397895",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/apachebeam%40apachebeam-328222.iam.gserviceaccount.com"
 }
